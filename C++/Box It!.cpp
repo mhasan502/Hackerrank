@@ -54,7 +54,6 @@ class Box{
 };
 
 void check2(){
-
 	int n;
 	cin>>n;
 	Box temp;
