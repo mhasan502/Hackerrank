@@ -1,0 +1,2 @@
+SELECT FLOOR((AVG(Salary)-AVG(REPLACE(Salary,'0','')))+1)
+FROM EMPLOYEES
