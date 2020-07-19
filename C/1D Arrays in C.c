@@ -4,18 +4,13 @@
 #include <stdlib.h>
 
 int main() {
-
-    int n;
+    int n, sum=0;
     scanf("%d",&n);
-    int array[n];
-    int sum=0;
-
-    for(int i=0; i<n;i++){
-        scanf("%d",&array[i]);
-        sum+=array[i];
+    int *val = malloc(n*sizeof(int));
+    for(int i=0; i<n; i++){
+        scanf("%d",&val[i]);
+        sum += val[i];
     }
-    printf("%d\n",sum);
-
+    printf("%i",sum);
     return 0;
 }
-
